@@ -1,4 +1,7 @@
-const palindromes = function () {
+const palindromes = function (userString) {
+    userString = userString.split(" ").join("")
+    let cleanString = userString.split("").reverse().join("")
+    return userString == cleanString
 
 };
 
